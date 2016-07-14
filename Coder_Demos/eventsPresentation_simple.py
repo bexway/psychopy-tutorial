@@ -1,3 +1,5 @@
+#A simple animation
+
 from __future__ import division
 import time
 import sys
