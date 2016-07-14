@@ -1,3 +1,6 @@
+#The animation and response presentation
+#This is the windowed version
+
 from __future__ import division
 from psychopy import visual,event,core
 import time
@@ -27,7 +30,7 @@ minimum = -.35
 #The minimum point is the lowest point the square will be at.
 maximum = .15
 #The maximum point is the highest point the square will be at.
-height = abs(maximum) + abs(minimum)
+height = maximum - minimum
 #the height is the full distance the square will traverse
 
 parametersfile = open('eventsparameters.csv', 'r')

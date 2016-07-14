@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.83.04), July 14, 2016, at 12:18
+This experiment was created using PsychoPy2 Experiment Builder (v1.83.04), July 14, 2016, at 13:14
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -34,7 +34,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' %(expInfo['participant'], expNam
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath=u'C:\\Users\\Rebecca\\Documents\\college\\RA Work\\Experiments\\Psychopy_Presentation\\Builder_Demo\\gloopPresentation.psyexp',
+    originPath=u'C:\\Users\\Rebecca\\Documents\\college\\RA Work\\Github Repositories\\psychopy-tutorial\\Builder_Demo\\gloopPresentation.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -73,9 +73,9 @@ image = visual.ImageStim(win=win, name='image',units='pix',
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
 sentPrompt = visual.TextStim(win=win, ori=0, name='sentPrompt',
-    text='default text',    font=u'Arial',
+    text='default text',    font='Arial',
     units='height', pos=[0, -.3], height=0.05, wrapWidth=None,
-    color=u'black', colorSpace='rgb', opacity=1,
+    color='black', colorSpace='rgb', opacity=1,
     depth=-2.0)
 instructions = visual.TextStim(win=win, ori=0, name='instructions',
     text='Press f for yes and j for no',    font='Arial',
@@ -195,7 +195,7 @@ for thisTrial in trials:
     frameN = -1
     # update component parameters for each repeat
     image.setImage(imagePath)
-    sentPrompt.setText("Is the sphere " + sphereColor + " ?")
+    sentPrompt.setText("Is the sphere " + sphereColor + "?")
     key_resp_2 = event.BuilderKeyResponse()  # create an object of type KeyResponse
     key_resp_2.status = NOT_STARTED
     # keep track of which components have finished
@@ -314,9 +314,6 @@ for thisTrial in trials:
 if trials.trialList in ([], [None], None):  params = []
 else:  params = trials.trialList[0].keys()
 # save data for this loop
-trials.saveAsExcel(filename + '.xlsx', sheetName='trials',
-    stimOut=params,
-    dataOut=['n','all_mean','all_std', 'all_raw'])
 trials.saveAsText(filename + 'trials.csv', delim=',',
     stimOut=params,
     dataOut=['n','all_mean','all_std', 'all_raw'])
