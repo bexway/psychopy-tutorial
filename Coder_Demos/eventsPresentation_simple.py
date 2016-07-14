@@ -1,4 +1,5 @@
 #A simple animation
+#Shows a square jumping
 
 from __future__ import division
 import time
