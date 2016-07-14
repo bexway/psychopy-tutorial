@@ -17,7 +17,7 @@
     <Param name="expName" updates="None" val="gloopPresentation" valType="str"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
-    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="use prefs" valType="str"/>
     <Param name="Save log file" updates="None" val="False" valType="bool"/>
     <Param name="Screen" updates="None" val="1" valType="num"/>
